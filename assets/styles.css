@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family: monospace;
     background-color: #121212;
     color: #00ff00;
@@ -7,13 +9,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow: scroll;
   }
+
   .terminal {
     background-color: #000;
     width: 80%;
-    height: 80%;
+    min-height: 80vh;
     border: 2px solid #555;
     border-radius: 5px;
     padding: 10px;
@@ -83,5 +86,57 @@ body {
   .btn:hover {
     background-color: #0056b3;
   }
+
+  :root{
+    --header-bac-color: linear-gradient(to right, #00bcd4, #002f55, #008a9c);
+    --header-text-color: rgb(12, 253, 3);
+    --button-bac-color: rgb(0, 0, 190);
+    --button-text-color: rgb(248, 247, 206);
+    --button-shadow-color: 3px 3px 12px rgb(248, 248, 150);
+    --image-color: linear-gradient(to right, rgb(0, 0, 190), rgb(1, 1, 65));
+    --root-bac-color: rgb(3, 0, 17);
+    --root-text-color: rgb(250, 248, 235);
+    --root-text-shadow: 3px 3px 12px rgb(250, 250, 208);
+    --footer-bac-color: linear-gradient(to right, #011933, #01569c, #fffc5d);
+}
+
+#port {
+    padding-left: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-left: 5%;
+    width: 100%;
+    height: 15%;
+    background: var(--footer-bac-color);
+    align-content: center;
+    padding: 20px 10px
+}
+
+body {
+    margin-left: 0px;
+}
+
+footer p { 
+    margin-left: 10px;
+    color: var(--root-text-color)
+}
+
+header {
+    width: 100%;
+    min-height: 15vh;
+    align-content: center;
+    background: var(--header-bac-color);
+    color: var(--header-text-color);
+    margin-bottom: 20px;
+    justify-items: center;
+}
+
+.subheading {
+    justify-self: flex-end;
+    margin-right: 20px;
+    color: var(--button-text-color)
+}
   
   
