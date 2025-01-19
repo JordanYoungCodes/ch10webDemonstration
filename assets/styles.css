@@ -1,0 +1,87 @@
+body {
+    font-family: monospace;
+    background-color: #121212;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .terminal {
+    background-color: #000;
+    width: 80%;
+    height: 80%;
+    border: 2px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px #00ff00;
+  }
+  .input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .input-line::before {
+    content: "$ ";
+    margin-right: 5px;
+  }
+  .output {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .input-field {
+    flex: 1;
+    background: none;
+    border: none;
+    color: #00ff00;
+    font-family: monospace;
+    font-size: 16px;
+    outline: none;
+  }
+  .input-field::placeholder {
+    color: #555;
+  }
+  .output svg {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #555;
+  }
+
+  #download-link {
+    margin-top: 20px;
+    display: none; /* Start hidden */
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  #download-link.visible {
+    display: inline-block; /* Change to inline-block when visible */
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
